@@ -11,17 +11,15 @@ import 'package:y_clinic_app/core/utils/app_router.dart';
 class OnboardingPageTwo extends StatelessWidget {
   const OnboardingPageTwo({
     super.key,
-    // required this.screenHeight,
-    // required this.controller,
+    required this.screenHeight,
+    required this.controller,
   });
 
-  // final double screenHeight;
-  // final PageController controller;
+  final double screenHeight;
+  final PageController controller;
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
-    final PageController controller = PageController();
     return Column(
       children: [
         OnboardingImage(

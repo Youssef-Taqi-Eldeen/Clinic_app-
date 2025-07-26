@@ -18,25 +18,25 @@ abstract class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const OnboardingPageTwo(),
+        builder: (context, state) => const SplashView(),
         routes: [
           GoRoute(
               path: kOnboardingViewOne,
               builder: (context, state) {
-                //      final screenHeight = MediaQuery.of(context).size.height;
-                return const OnboardingPageOne(
-                    // screenHeight: screenHeight,
-                    // controller: controller,
-                    );
+                final screenHeight = MediaQuery.of(context).size.height;
+                return OnboardingPageOne(
+                  screenHeight: screenHeight,
+                  controller: controller,
+                );
               }),
           GoRoute(
               path: kOnboardingViewTwo,
               builder: (context, state) {
-                //       final screenHeight = MediaQuery.of(context).size.height;
+                final screenHeight = MediaQuery.of(context).size.height;
                 return OnboardingPageTwo(
-                    // screenHeight: screenHeight,
-                    // controller: controller,
-                    );
+                  screenHeight: screenHeight,
+                  controller: controller,
+                );
               }),
           GoRoute(
               path: kOnboardingViewThree,

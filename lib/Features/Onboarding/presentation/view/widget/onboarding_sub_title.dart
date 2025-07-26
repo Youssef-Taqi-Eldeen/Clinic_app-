@@ -14,7 +14,7 @@ class OnboardingSubTitle extends StatelessWidget {
       textAlign: TextAlign.center,
       style: GoogleFonts.inter(
         fontSize: 16,
-        color: const Color(0xff374151),
+        color: const Color(0xff6B7280),
         fontWeight: FontWeight.w400,
       ),
     );

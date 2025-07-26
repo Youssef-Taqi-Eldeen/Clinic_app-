@@ -13,8 +13,7 @@ class OnboardingBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const OnboardingPageOne(
-        //    screenHeight: screenHeight, controller: controller
-        );
+    return OnboardingPageOne(
+        screenHeight: screenHeight, controller: controller);
   }
 }
