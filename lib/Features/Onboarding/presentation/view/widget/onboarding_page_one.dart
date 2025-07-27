@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_image.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_next_botton.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_indicator.dart';
-import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_two.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_skip_botton.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_sub_title.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_title.dart';
+import 'package:y_clinic_app/core/utils/app_router.dart';
 
 class OnboardingPageOne extends StatelessWidget {
   const OnboardingPageOne({
@@ -43,20 +44,8 @@ class OnboardingPageOne extends StatelessWidget {
         ),
         OnboardingNextButton(
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => OnboardingPageTwo(
-                  screenHeight: MediaQuery.of(context).size.height,
-                  controller: controller,
-                ),
-              ),
-            );
+            context.go(AppRouter.kOnboardingViewTwo);
           },
-          // onPressed: () {
-
-          //   // context.go(AppRouter.kOnboardingViewTwo);
-          // },
         ),
         const SizedBox(
           height: 18,

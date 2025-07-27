@@ -16,9 +16,7 @@ class OnboardingNextButton extends StatelessWidget {
         height: 48,
         child: ElevatedButton(
           onPressed: () {
-            print("before come");
             onPressed();
-            print("after come");
           },
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xff1C2A3A),

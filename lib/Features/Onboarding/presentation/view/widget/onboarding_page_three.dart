@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_image.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_next_botton.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_indicator.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_skip_botton.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_sub_title.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_title.dart';
-import 'package:y_clinic_app/Features/login/one.dart';
+import 'package:y_clinic_app/core/utils/app_router.dart';
 
 class OnboardingPageThree extends StatelessWidget {
   const OnboardingPageThree({
@@ -44,10 +45,7 @@ class OnboardingPageThree extends StatelessWidget {
           ),
           OnboardingNextButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const One()),
-              );
+              context.go(AppRouter.kLOginone);
             },
           ),
           const SizedBox(
