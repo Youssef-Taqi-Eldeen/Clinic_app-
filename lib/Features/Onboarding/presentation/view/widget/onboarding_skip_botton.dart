@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:y_clinic_app/core/utils/app_router.dart';
 
 class OnboardingSkipButton extends StatelessWidget {
   const OnboardingSkipButton({
@@ -8,7 +10,9 @@ class OnboardingSkipButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        context.go(AppRouter.kLOginone);
+      },
       child: const Text(
         "SKip",
         style: TextStyle(
