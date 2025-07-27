@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_one.dart';
+import 'package:y_clinic_app/Features/Onboarding/presentation/view/onboarding_view.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_three.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_two.dart';
 import 'package:y_clinic_app/Features/Splach/presentation/view/splash_view.dart';
@@ -23,11 +23,7 @@ abstract class AppRouter {
           GoRoute(
               path: kOnboardingViewOne,
               builder: (context, state) {
-                final screenHeight = MediaQuery.of(context).size.height;
-                return OnboardingPageOne(
-                  screenHeight: screenHeight,
-                  controller: controller,
-                );
+                return const OnboardingView();
               }),
           GoRoute(
               path: kOnboardingViewTwo,
