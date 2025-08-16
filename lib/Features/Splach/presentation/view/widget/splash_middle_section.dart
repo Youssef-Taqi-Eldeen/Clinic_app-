@@ -39,7 +39,7 @@ class SplachMiddleSection extends StatelessWidget {
               ),
               child: Center(
                 child: Image.asset(
-                  'assets/images/Logo.png',
+                  'assets/images/white Logo.png',
                   width: 100,
                 ),
               ),
