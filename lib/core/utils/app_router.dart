@@ -3,8 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/onboarding_view.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_three.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_two.dart';
+import 'package:y_clinic_app/Features/Profile/presentation/view/profile_view.dart';
 import 'package:y_clinic_app/Features/Sign%20up/presentation/view/sign_up_view.dart';
-import 'package:y_clinic_app/Features/Splach/presentation/view/splash_view.dart';
 
 final PageController controller = PageController();
 
@@ -18,7 +18,7 @@ abstract class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const SignUpView(),
+        builder: (context, state) => const ProfileView(),
         routes: [
           GoRoute(
               path: kOnboardingViewOne,
