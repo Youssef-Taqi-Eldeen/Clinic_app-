@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/custom_botton.dart';
 import 'package:y_clinic_app/Features/Profile/presentation/view/widget/app_bar_profile_view.dart';
+import 'package:y_clinic_app/Features/Profile/presentation/view/widget/app_dialogs.dart';
 import 'package:y_clinic_app/Features/Profile/presentation/view/widget/gender_dropdown.dart';
 import 'package:y_clinic_app/Features/Profile/presentation/view/widget/profile_image_with_icon.dart';
 import 'package:y_clinic_app/Features/Sign%20up/presentation/view/widget/custom_text_field.dart';
@@ -52,7 +53,11 @@ class ProfileViewBody extends StatelessWidget {
             const SizedBox(
               height: 32,
             ),
-            CustomButton(onPressed: () {}, text: 'Save')
+            CustomButton(
+                onPressed: () {
+                  AppDialogs.showCongrats(context);
+                },
+                text: 'Save')
           ],
         ),
       ),
