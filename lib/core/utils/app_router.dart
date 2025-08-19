@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:y_clinic_app/Features/Forget%20Password%20Flow/presentation/view/send_code_view.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/onboarding_view.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_three.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_two.dart';
@@ -13,12 +14,13 @@ abstract class AppRouter {
   static const kOnboardingViewTwo = '/OnboardingPageTwo';
   static const kOnboardingViewThree = '/OnboardingPageThree';
   static const kLOginone = '/One';
+  static const kHomePage = '/HomePage';
 
   static final GoRouter router = GoRouter(
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const ProfileView(),
+        builder: (context, state) => const SendCodeView(),
         routes: [
           GoRoute(
               path: kOnboardingViewOne,
