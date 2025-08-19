@@ -5,6 +5,7 @@ import 'package:y_clinic_app/Features/Onboarding/presentation/view/onboarding_vi
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_three.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_two.dart';
 import 'package:y_clinic_app/Features/Profile/presentation/view/profile_view.dart';
+import 'package:y_clinic_app/Features/Sign%20In/presentation/view/sign_in_view.dart';
 import 'package:y_clinic_app/Features/Sign%20up/presentation/view/sign_up_view.dart';
 
 final PageController controller = PageController();
@@ -20,7 +21,7 @@ abstract class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const SendCodeView(),
+        builder: (context, state) => const SignInView(),
         routes: [
           GoRoute(
               path: kOnboardingViewOne,
