@@ -11,45 +11,45 @@ class ProfileViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 52, right: 24, left: 24, bottom: 22),
+      padding: const EdgeInsets.only(top: 52, right: 24, left: 24, bottom: 22),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            AppBarProfileView(),
-            SizedBox(
+            const AppBarProfileView(),
+            const SizedBox(
               height: 16,
             ),
-            ProfileImageWithIcon(),
-            SizedBox(
+            const ProfileImageWithIcon(),
+            const SizedBox(
               height: 20,
             ),
-            CustomTextField(
+            const CustomTextField(
               hintText: 'Michael Jordan',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            CustomTextField(
+            const CustomTextField(
               hintText: 'Nickname',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            CustomTextField(
+            const CustomTextField(
               hintText: 'name@example.com',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            CustomTextField(
+            const CustomTextField(
               hintText: 'Date of Birth',
               imagePath: 'assets/images/calendar-2.png',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            GenderDropdown(),
-            SizedBox(
+            const GenderDropdown(),
+            const SizedBox(
               height: 32,
             ),
             CustomButton(onPressed: () {}, text: 'Save')

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:y_clinic_app/Features/Sign%20up/presentation/view/widget/button_create_account.dart';
+import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/custom_botton.dart';
 import 'package:y_clinic_app/Features/Sign%20up/presentation/view/widget/section_image_two_text.dart';
 import 'package:y_clinic_app/Features/Sign%20up/presentation/view/widget/section_text_field.dart';
 import 'package:y_clinic_app/Features/Sign%20up/presentation/view/widget/separator.dart';
@@ -23,7 +23,10 @@ class SignUpViewBody extends StatelessWidget {
           const SizedBox(
             height: 22,
           ),
-          ButtonCreateAccount(onPressed: () {}),
+          CustomButton(
+            onPressed: () {},
+            text: "Create Account",
+          ),
           const Separator(),
           const SocialButton(
             image: 'assets/images/Google - Original.png',

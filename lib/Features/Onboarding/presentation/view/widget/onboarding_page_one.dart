@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_image.dart';
-import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_next_botton.dart';
+import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/custom_botton.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_page_indicator.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_skip_botton.dart';
 import 'package:y_clinic_app/Features/Onboarding/presentation/view/widget/onboarding_sub_title.dart';
@@ -42,10 +42,12 @@ class OnboardingPageOne extends StatelessWidget {
         const SizedBox(
           height: 20,
         ),
-        OnboardingNextButton(
+        CustomButton(
           onPressed: () {
             context.go(AppRouter.kOnboardingViewTwo);
           },
+          text: 'Next',
+          padding: const EdgeInsets.symmetric(horizontal: 32),
         ),
         const SizedBox(
           height: 18,

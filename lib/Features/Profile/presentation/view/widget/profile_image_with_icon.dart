@@ -10,17 +10,16 @@ class ProfileImageWithIcon extends StatelessWidget {
         children: [
           const CircleAvatar(
             backgroundColor: Colors.transparent,
-            radius: 100,
-            backgroundImage: AssetImage(
-                "assets/images/profile-circle.png"), // أو NetworkImage
+            radius: 90,
+            backgroundImage: AssetImage("assets/images/profile-circle.png"),
           ),
           Positioned(
-            bottom: 0,
-            right: 0,
+            bottom: 17,
+            right: 10,
             child: Container(
               padding: const EdgeInsets.all(5),
               decoration: const BoxDecoration(
-                color: Colors.black, // خلفية القلم
+                color: Colors.black,
                 shape: BoxShape.circle,
               ),
               child: const Icon(

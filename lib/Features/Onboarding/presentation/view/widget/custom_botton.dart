@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class OnboardingNextButton extends StatelessWidget {
-  const OnboardingNextButton({
+class CustomButton extends StatelessWidget {
+  const CustomButton({
     super.key,
     required this.onPressed,
+    required this.text,
+    this.padding,
   });
+  final String text;
   final VoidCallback onPressed;
+  final EdgeInsets? padding;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 39.5),
+      padding: padding ?? const EdgeInsets.all(0),
       child: SizedBox(
         width: double.infinity,
         height: 48,
@@ -23,13 +28,12 @@ class OnboardingNextButton extends StatelessWidget {
             elevation: 6,
             shadowColor: Colors.black.withOpacity(0.2),
           ),
-          child: const Text(
-            "Next",
-            style: TextStyle(
+          child: Text(
+            text,
+            style: GoogleFonts.inter(
               color: Colors.white,
               fontSize: 16,
               fontWeight: FontWeight.w500,
-              fontFamily: 'Inter',
             ),
           ),
         ),
